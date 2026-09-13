@@ -1,0 +1,28 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+
+  "name": "ai-global-news",
+
+  "main": "src/index.ts",
+
+  "compatibility_date": "2026-09-13",
+
+  "observability": {
+    "enabled": true
+  },
+
+  "triggers": {
+    "crons": [
+      "0 0 * * *"
+    ]
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ai-global-news",
+      "database_id": "dea44039-4dcb-4735-b4ce-4abcd0cde200",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

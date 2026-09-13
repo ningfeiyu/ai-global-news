@@ -1,0 +1,5 @@
+node_modules/
+/root/ai-global-news/.wrangler/
+*.log
+.env
+.secrets
